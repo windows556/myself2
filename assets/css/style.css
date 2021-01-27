@@ -1,0 +1,350 @@
+/*-----------general section Begin------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(253, 93, 19);
+  bottom: 0;
+  left: 0;
+}
+
+/*-----------general section End------------*/
+
+/*-----------Header Begin------------*/
+#header {
+  /* z-index: 997; */
+  transition: all 0.5s;
+  height: 80px;
+  background: rgba(25, 28, 31, 0.8);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  background: rgba(25, 28, 31, 0.8);
+}
+/*-----------Header End------------*/
+
+/*-----------#bgpic Begin------------*/
+#bgpic {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg-pic.jpg") top center;
+    background-size: cover;
+}
+  
+#bgpic:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#bgpic .bgpic-container {
+    position: relative;
+}
+
+#bgpic h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    font-family: "Hachi Maru Pop", cursive;
+    color: white;
+}
+
+#bgpic p {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    text-align: center; 
+}
+
+#bgpic p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #000000;
+}
+/*-----------#bgpic Begin------------*/
+
+
+/*-----------navbar Begin------------*/
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu > ul {
+    display: flex;
+  }
+
+  .nav-menu > ul > li {
+    position: relative;
+    justify-content: center;
+  }
+
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+/*-----------navbar End------------*/
+
+
+
+/*----------#about Begin----------*/
+.about .about-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.about .about-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  border-left: 2px solid rgb(253, 93, 19);
+  position: relative;
+}
+
+.about .about-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.about .about-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+/*----------#about End----------*/
+
+
+/*----------#bootcamp Begin----------*/
+.section-bootcamp-bg-color{
+  background: #e9ecef;
+}
+
+.bootcamp {
+  padding: 15% 15%;
+  font-family: "Poppins", sans-serif;
+}
+
+.bootcamp h1 {
+  font-size: 50px;
+}
+
+#kumamon1{
+  font-size: 60px;
+}
+/*----------#bootcamp End----------*/
+
+
+/*----------#hobbies Begin----------*/
+.hobbies .hobbies-item {
+  margin-bottom: 30px;
+}
+
+.hobbies-container {
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 157, 221, 0.95);
+}
+
+.hobbies .hobbies-item:hover .hobbies-item-img img {
+  transform: scale(1.2);
+}
+/*----------#hobbies End----------*/
+
+/*----------#contact Begin----------*/
+.contact .info-box {
+  color: #413f3f;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(182, 180, 180, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i.bx {
+  font-size: 24px;
+  color: #ffb727;
+  border-radius: 50%;
+  padding: 15px;
+  background: #fff6e4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #776f6f;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #687683;
+  line-height: 1;
+  margin: 0 8px;
+  transition: 0.3s;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid #dde1e4;
+}
+
+.contact .social-links a:hover {
+  color: #fff;
+  border-color: #ffb727;
+  background: #ffb727;
+  transform: scale(1.2);
+}
+
+.contact .contact-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 27px;
+}
+
+.contact .contact-form button[type="submit"] {
+  background: #ffb727;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .contact-form button[type="submit"]:hover {
+  background: #ffc85a;
+}
+/*----------#contact End----------*/
+
+/*----------#footer Begin----------*/
+#footer {
+  background: url("../img/bg-pic.jpg") top center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#footer .container {
+  position: relative;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "'Hachi Maru Pop", cursive;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #ffb727;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+/*----------#footer End----------*/
